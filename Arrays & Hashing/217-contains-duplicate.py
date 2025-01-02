@@ -12,12 +12,12 @@ def containsDuplicate(nums):
     :type nums: List[int]
     :rtype: bool
     """
-    s = set()
+    hashset = set()
     for i in nums:
-        if(i in s):
-            return print("true")
-        s.add(i)
-    return print("false")
+        if(i in hashset):
+            return print("True")
+        hashset.add(i)
+    return print("False")
 
 nums = [1,2,3,1]
 containsDuplicate(nums)
